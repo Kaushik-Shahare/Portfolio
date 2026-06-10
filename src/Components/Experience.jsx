@@ -6,36 +6,30 @@ const experiences = [
     id: "experience-1",
     title: "Backend Developer Intern",
     company: "Mr. Loggage",
-    location: "Gujrat, India",
-    duration: "June 2024 - December 2024",
+    location: "Vadodara, Gujarat, India",
+    duration: "Jun 2024 – Aug 2024",
     shortDescription:
-      "Completed backend services development using Express with API development and database management.",
+      "Led backend development at a college-incubated logistics startup, building the Express.js backend from the ground up.",
     certificate: "/certificates/Experience/MrLoggageCertificate.pdf",
     detailedDescription: `
 # Backend Developer Intern - Mr. Loggage
 
 ## Role Overview
-As a Backend Developer Intern at Mr. Loggage, I've been instrumental in developing robust backend services using Express.js. This role has provided me with extensive hands-on experience in server-side development and API architecture.
+Mr. Loggage is a logistics startup incubated at my college, working out of a shared workspace on campus. I led backend development and built the Express.js backend from the ground up — from the first route to a working product.
 
-## Key Responsibilities
-- **API Development**: Designed and implemented RESTful APIs to support various client applications
-- **Database Management**: Worked with SQL and NoSQL databases for data storage and retrieval
-- **Debugging & Testing**: Identified and resolved backend issues, ensuring smooth application performance
-- **Code Optimization**: Improved existing code structure for better performance and maintainability
-- **Documentation**: Created comprehensive API documentation for team collaboration
-
-## Technical Achievements
-- Successfully reduced API response time by 30% through query optimization
-- Implemented authentication and authorization systems for secure access
-- Developed middleware for logging and error handling
-- Integrated third-party services and payment gateways
+## What I Built
+- **REST APIs**: Designed and implemented the RESTful API layer powering the client applications
+- **Authentication**: Implemented JWT-based authentication and authorization for secure access
+- **Databases**: Designed schemas and data access across MongoDB and PostgreSQL
+- **Payments**: Integrated a payment gateway for customer transactions
+- **Logging**: Set up structured logging and request tracing with Winston and Morgan
+- **Documentation**: Wrote API documentation so the rest of the team could build against the backend
 
 ## Skills Developed
-- Advanced Express.js and Node.js development
-- Database design and optimization (MongoDB, PostgreSQL)
-- API security and authentication (JWT, OAuth)
+- Express.js and Node.js development from a blank repository to production
+- Database design across MongoDB and PostgreSQL
+- API security and authentication (JWT)
 - Version control with Git and collaborative development
-- Testing frameworks (Jest, Mocha)
     `,
     skills: [
       "Express.js",
@@ -54,43 +48,32 @@ As a Backend Developer Intern at Mr. Loggage, I've been instrumental in developi
     title: "Backend Developer Intern",
     company: "Storyvord Ltd.",
     location: "London, UK (Remote)",
-    duration: "July 2024 - Jan 2025",
+    duration: "Jul 2024 – Jan 2025",
     shortDescription:
-      "Focused on Django backend development with server-side code and system integration.",
+      "Django backend development for an AI film pre-production and production management SaaS platform.",
     certificate: "/certificates/Experience/StoryvordCertificate.pdf",
     detailedDescription: `
 # Backend Developer Intern - Storyvord Ltd.
 
 ## Company Overview
-Storyvord Ltd. is a London-based technology company specializing in digital storytelling platforms and content management solutions.
+Storyvord is a London-based SaaS company building an AI-powered film pre-production and production management platform — taking film teams from script to screen with AI-assisted planning, budgeting, and creative tooling.
 
 ## Role Details
-During my tenure as a Backend Developer Intern, I worked extensively with Django framework to build scalable backend solutions for the company's digital platforms.
+I joined Storyvord remotely as a Backend Developer Intern in July 2024, working on the Django backend that powers the platform. Within about six months I was promoted to Software Engineer based on ownership and output.
 
 ## Key Contributions
-- **Django Development**: Built robust backend systems using Django and Django REST Framework
-- **API Integration**: Developed and integrated various APIs for content management
-- **Database Design**: Designed efficient database schemas using Django ORM
-- **Server-side Logic**: Implemented complex business logic for content processing
-- **System Integration**: Integrated multiple third-party services and APIs
-
-## Major Projects
-### Content Management System
-- Developed a comprehensive CMS backend supporting multi-user content creation
-- Implemented role-based access control and content approval workflows
-- Built automated content processing pipelines
-
-### API Development
-- Created RESTful APIs serving mobile and web applications
-- Implemented real-time features using Django Channels
-- Developed comprehensive API documentation using Django REST Swagger
+- **Django Development**: Built and maintained backend services using Django and Django REST Framework
+- **API Development**: Designed RESTful APIs serving the platform's web applications
+- **Database Design**: Modeled production-domain data (projects, crew, tasks, files) with the Django ORM and PostgreSQL
+- **Access Control**: Worked on project-level role-based access so film teams could safely collaborate on shared productions
+- **System Integration**: Integrated third-party services and internal pipelines into the backend
+- **Async Processing**: Used Celery and Redis for background jobs and long-running tasks
 
 ## Technical Skills Gained
-- Advanced Django and Python development
-- RESTful API design and implementation
-- Database optimization and query performance
-- Cloud deployment and DevOps practices
-- Agile development methodologies
+- Production Django and Python development on a real SaaS codebase
+- RESTful API design and code review discipline
+- Database modeling and query performance
+- Working remotely with a distributed product team
     `,
     skills: [
       "Django",
@@ -106,86 +89,63 @@ During my tenure as a Backend Developer Intern, I worked extensively with Django
   },
   {
     id: "experience-3",
-    title: "Software Engineer Intern",
+    title: "Software Engineer",
     company: "Storyvord Ltd.",
     location: "London, UK (Remote)",
-    duration: "Jan 2025 - Present",
+    duration: "Jan 2025 – Present",
     shortDescription:
-      "Managing server-side code, Azure deployment, cloud monitoring infrastructure, and developing AI agents using LangGraph.",
+      "Promoted from intern to Software Engineer; top backend contributor and sole author of the Creative Hub frontend on an AI film production platform. Now operating at lead scope — mentoring interns, authoring PRDs and system-design reviews.",
     detailedDescription: `
-# Software Engineer Intern - Storyvord Ltd.
+# Software Engineer - Storyvord Ltd.
 
 ## Role Evolution
-Following my successful completion as a Backend Developer Intern, I was promoted to Software Engineer Intern, expanding my responsibilities to include cloud infrastructure and DevOps practices.
+Storyvord builds an AI film pre-production and production management SaaS platform. I was promoted from Backend Developer Intern to Software Engineer within about six months, and now operate at lead scope: I mentor interns, own product decisions, and author PRDs and system-design reviews.
 
-## Current Responsibilities
-- **Server Management**: Maintaining and optimizing server-side applications
-- **Azure Deployment**: Managing application deployments on Microsoft Azure cloud platform
-- **Cloud Monitoring**: Implementing comprehensive monitoring solutions using industry-standard tools
-- **AI Agent Development**: Designing and implementing intelligent AI agents using LangGraph for automated workflows and decision-making processes
+## Scope of Ownership
+- Own backend architecture and product decisions for the Creative Hub on Django/PostgreSQL
+- Sole author of the Creative Hub frontend (**Next.js 16 / React 19**) — every page, component, and design decision
+- Review and merge the team's PRs; mentor 4 interns; write the PRDs and system-design reviews that set direction
 
-## AI Agent Development
-### LangGraph Integration
-- Designed and developed intelligent AI agents using LangGraph framework
-- Implemented multi-step reasoning workflows for complex business logic automation
-- Created stateful conversation flows and decision trees for enhanced user interactions
-- Integrated AI agents with existing backend systems for seamless data processing
+## Creative Hub: Script-to-Screen Pipeline
+- Built the screenplay pipeline end to end: upload (PDF/DOCX to FDX) → AI scene and shot breakdown → bulk previz image generation for an entire script in a few clicks → video generation
+- Multi-provider generation across Azure OpenAI gpt-image-2, Together AI, and fal.ai Seedance, with cost-aware routing and credit pre-flight checks before expensive jobs run
 
-### Agent Architecture
-- Built modular agent systems with clear separation of concerns
-- Implemented agent memory and context management for persistent conversations
-- Developed custom tools and function calling capabilities for agents
-- Created monitoring and logging systems specifically for AI agent performance
+## AI Systems
+### LangGraph Multi-Agent Assistant
+- Built a supervisor plus 5 specialist agents, streaming responses over WebSockets
+- Added guardrails, per-user memory, and FAISS-based retrieval
 
+### AI Film Risk Analyzer
+- LangGraph classification across a 43-category risk registry with a deterministic scoring engine
+- Human-in-the-loop edit-then-finalize approval flow
+- Dual PDF reports (insurance and producer) and a golden-eval CI gate so model changes can't silently regress
 
-## Monitoring & Observability Stack
-### Grafana
-- Set up dashboards for real-time application performance monitoring
-- Created custom visualizations for business metrics and KPIs
-- Implemented alerting systems for proactive issue detection
+### Studio Production Sheet Builder
+- Manual-first production sheets: deterministic Pillow compositing of real approved character, location, and storyboard art
+- Manual/AI toggle with manual as the default (zero AI credits) — giving creative directors control where the industry default is fully AI-generated sheets
+- Chose deterministic compositing over generative rendering because image models re-imagine and distort real approved art
 
-### Prometheus
-- Configured metrics collection from various application components
-- Set up service discovery and monitoring targets
-- Developed custom metrics for application-specific monitoring needs
-
-### Promtail & Grafana Loki
-- Implemented centralized logging infrastructure
-- Set up log aggregation from multiple services and containers
-- Created log-based alerting and monitoring rules
-
-
-## Cloud Infrastructure
-- **Azure Services**: Working with Azure App Service, Azure SQL Database, Azure Storage
-- **DevOps Practices**: Implementing CI/CD pipelines using Azure DevOps
-- **Container Management**: Working with Docker containers and orchestration
-- **Security**: Implementing security best practices for cloud deployments
-
-## Impact & Achievements
-- Reduced system downtime by 40% through proactive monitoring
-- Implemented automated deployment pipelines improving deployment frequency
-- Set up comprehensive logging reducing debugging time significantly
-- Optimized cloud resource usage resulting in cost savings
-- Developed AI agents that automated 60% of repetitive business processes
-- Created intelligent decision-making systems reducing manual intervention by 45%
-
-## Future Goals
-- Expanding knowledge in Kubernetes and container orchestration
-- Learning Infrastructure as Code (IaC) with Terraform
-- Exploring microservices architecture patterns
+## Platform Engineering
+- **Billing**: Race-free credit billing using distributed locks and select_for_update, with a per-model, per-tier relational pricing schema behind credit wallets
+- **Access Control**: Project-level RBAC across the platform
+- **Async**: Celery queues per pipeline stage so generation workloads scale independently
+- **Observability**: Grafana, Prometheus, Loki, and Promtail monitoring on Azure
     `,
     skills: [
+      "Django",
+      "Next.js",
+      "React",
+      "LangGraph",
       "Azure",
-      "LangChain/LangGraph",
+      "Celery",
+      "WebSockets",
+      "FAISS",
       "Grafana",
       "Prometheus",
-      "Promtail",
-      "Grafana Loki",
       "Docker",
-      "DevOps",
       "CI/CD",
     ],
-    type: "Cloud & DevOps",
+    type: "Full-Stack & AI Engineering",
     status: "Current",
   },
 ];

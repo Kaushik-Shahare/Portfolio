@@ -199,7 +199,7 @@ const Profile = () => {
               <div className="flex items-center justify-center lg:justify-start gap-3">
                 <FaEnvelope className="text-green-400" size={18} />
                 <a
-                  href="mailto:kaushikshahare@gmail.com"
+                  href="mailto:kaushikshahare4@gmail.com"
                   className="text-green-200 text-base hover:text-green-400 transition-colors duration-300 hover:underline"
                 >
                   kaushikshahare4@gmail.com

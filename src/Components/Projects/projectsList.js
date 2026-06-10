@@ -73,8 +73,8 @@ const projects = [
     shortDescription:
       "Capture or paste news articles to get summarized information.",
     detailedDescription:
-      "The News Summary project is a powerful tool for extracting and summarizing news articles. Users can either capture a photo of a news article or paste the URL of an article to receive a summary that includes the title, date, author, and main content. The project leverages Python, Django, and web scraping techniques to provide users with concise and relevant information from various news sources.",
-    link: "https://example.com/project-four",
+      "The News Summary project is a powerful tool for extracting and summarizing news articles. Users can either capture a photo of a news article or paste the URL of an article to receive a summary that includes the title, date, author, and main content. The project leverages Python, Flask, and web scraping techniques to provide users with concise and relevant information from various news sources.",
+    link: "https://github.com/Kaushik-Shahare/News-Summarization-WebSite",
     gitHub: "https://github.com/Kaushik-Shahare/News-Summarization-WebSite",
     photos: [
       "https://raw.githubusercontent.com/Kaushik-Shahare/News-Summarization-WebSite/main/demo/Images/home.png",
@@ -95,7 +95,7 @@ const projects = [
       "Innovative piano learning tool using computer vision and AI.",
     detailedDescription:
       "The Virtual Piano Player project is an innovative tool designed to aid in piano learning. Users can draw a piano keyboard on a white surface, and the camera detects the keys using computer vision. The application plays the corresponding piano sounds as users interact with the keys. The project employs Python, OpenCV, and TensorFlow for hand and finger detection, although this feature is still under development.",
-    link: "https://example.com/project-five",
+    link: "https://github.com/Kaushik-Shahare/PianoPlayer",
     gitHub: "https://github.com/Kaushik-Shahare/PianoPlayer",
     photos: [
       "https://github.com/Kaushik-Shahare/PianoPlayer/raw/main/demo/Images/keydetection.png",
@@ -112,7 +112,7 @@ const projects = [
     id: 6,
     title: "AgriConnect",
     shortDescription:
-      "A marketplace to sell their products directly to consumers.",
+      "A marketplace for farmers to sell their products directly to consumers.",
     detailedDescription:
       "AgriConnect is an innovative platform designed to revolutionize the agricultural ecosystem by leveraging technology to bridge gaps between farmers, agricultural experts, and consumers. The platform serves as a comprehensive solution for farmers to network, share knowledge, and access a marketplace to sell their products directly, ensuring better profitability and sustainable practices.",
     link: "https://agriconnect.kaushikshahare.com",
@@ -232,7 +232,7 @@ This project was developed to recreate the popular mobile game MiniMilitia on th
       "pdfplumber",
     ],
     additionalInfo:
-      "Won 2nd Runner-Up (3rd place) among teams from various colleges across India. The system automates EHR validation, reduces denial risks, and saves hospitals over 1,900 hours per month by streamlining insurance processing and OPD check-ins.",
+      "Led the team to 2nd Runner-Up (3rd place) at a national healthcare hackathon with 150+ teams from colleges across India. The system automates EHR validation, reduces denial risks, and is projected to save hospitals an estimated 1,900+ hours per month by streamlining insurance processing and OPD check-ins.",
   },
   {
     id: 9,
@@ -311,19 +311,28 @@ This project was developed to recreate the popular mobile game MiniMilitia on th
     id: 11,
     title: "StyleSandbox",
     shortDescription:
-      "AI-powered virtual try-on platform via browser extension for any fashion website.",
+      "AI virtual try-on platform delivered as a Chrome extension that works across major fashion sites — solo-built and live in production.",
     detailedDescription:
-      "StyleSandbox is a browser-based AI platform that allows users to virtually try clothes from any e-commerce website using their own photos. It integrates a Chrome extension with a FastAPI backend and AI inference pipeline (Azure Foundry) to generate realistic try-on outputs. The system removes purchase uncertainty and improves conversion by letting users visualize outfits before buying.",
+      "I solo-built StyleSandbox in about 12 weeks: an AI virtual try-on platform that lets users try clothes on their own photos while shopping. It ships as a Chrome MV3 extension working across 6 fashion sites (Myntra, Zara, H&M, ASOS, AJIO, Snitch), backed by a FastAPI + Celery (gevent) inference backend deployed on Azure Container Apps with Key Vault managed identity. The platform runs Razorpay live payments with idempotent verification and geo-adaptive pricing, and is hardened with JWT refresh rotation, brute-force lockout, GDPR account deletion, and a CI pipeline with a full test suite. Image generation evolved from FLUX.2-pro to gpt-image-2 on Azure AI Foundry.",
     link: "https://stylesandbox.app",
     gitHub: "https://github.com/Kaushik-Shahare/StyleSandbox",
     photos: [
       "https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/StyleSandbox/Banner.jpg",
       "https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/StyleSandbox/History.jpg",
     ],
-    techStack: ["Next.js", "Tailwind CSS", "FastAPI", "Azure AI Foundry"],
+    techStack: [
+      "Chrome Extension (MV3)",
+      "Next.js",
+      "Tailwind CSS",
+      "FastAPI",
+      "Celery",
+      "Azure Container Apps",
+      "Azure AI Foundry",
+      "Razorpay",
+    ],
     libraries: ["Diffusers", "OpenCV", "Compression(FFmpeg)"],
     additionalInfo:
-      "Live production system with credit-based monetization. Supports multi-garment try-on, browser extension injection, and async AI processing pipeline with Azure Blob storage.",
+      "Live production system with credit-based monetization and Razorpay live payments. Supports multi-garment try-on, browser extension injection across 6 fashion sites, and an async AI processing pipeline with Azure Blob storage.",
   },
 ];
 

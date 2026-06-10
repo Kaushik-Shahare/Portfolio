@@ -79,7 +79,7 @@ const ContactMe = () => {
             </div>
             <div className="flex items-center gap-3 hover:scale-105 transition-transform">
               <FaMapMarkerAlt className="text-green-400" />
-              <span className="text-green-200 font-semibold">Thane, India</span>
+              <span className="text-green-200 font-semibold">Mumbai, Maharashtra, India</span>
             </div>
           </div>
         </div>

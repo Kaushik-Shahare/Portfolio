@@ -26,11 +26,11 @@ const AboutMe = () => {
             <strong className="text-green-400">Kaushik Shahare</strong>, a
             dedicated Software Engineer with a strong focus on{" "}
             <strong className="text-green-400">Backend Development</strong>. I'm
-            currently in my 4rd year of pursuing a{" "}
+            a final-year{" "}
             <strong className="text-green-400">
-              B.Tech in Computer Science and Engineering
-            </strong>
-            . I love building meaningful tech solutions and constantly strive to
+              B.Tech Computer Science and Engineering
+            </strong>{" "}
+            student at Parul University (graduating June 2026). I love building meaningful tech solutions and constantly strive to
             enhance my skills through hands-on projects and experimentation.
           </p>
           <p className="mb-6">
