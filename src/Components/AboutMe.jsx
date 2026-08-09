@@ -25,12 +25,17 @@ const AboutMe = () => {
             Hello! I'm{" "}
             <strong className="text-green-400">Kaushik Shahare</strong>, a
             dedicated Software Engineer with a strong focus on{" "}
-            <strong className="text-green-400">Backend Development</strong>. I'm
-            a final-year{" "}
+            <strong className="text-green-400">Backend Development</strong>. I
+            hold a B.Tech in{" "}
             <strong className="text-green-400">
-              B.Tech Computer Science and Engineering
+              Computer Science and Engineering
             </strong>{" "}
-            student at Parul University (graduating June 2026). I love building meaningful tech solutions and constantly strive to
+            from Parul University (graduated June 2026), and I'm now a{" "}
+            <strong className="text-green-400">
+              Founding Software Engineer
+            </strong>{" "}
+            at Storyvord and the founder of{" "}
+            <strong className="text-green-400">StyleSandbox</strong>. I love building meaningful tech solutions and constantly strive to
             enhance my skills through hands-on projects and experimentation.
           </p>
           <p className="mb-6">

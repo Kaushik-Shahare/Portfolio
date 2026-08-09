@@ -127,7 +127,7 @@ const Profile = () => {
             {/* Profile Picture */}
             <img
               src="/FormalPhoto1.jpeg"
-              alt="Kaushik Shahare - Software Engineer"
+              alt="Kaushik Shahare - Founding Software Engineer"
               className="object-cover w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 z-10 rounded-full"
               style={{
                 filter: "grayscale(100%) drop-shadow(0 0 10px #00ff00)",
@@ -149,7 +149,7 @@ const Profile = () => {
               Kaushik Shahare
             </h1>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl text-green-300 font-semibold">
-              Software Engineer - Backend
+              Founding Software Engineer
             </h2>
             <div className="w-24 h-1 bg-green-400 mx-auto lg:mx-0"></div>
           </div>

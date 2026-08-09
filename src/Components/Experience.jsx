@@ -4,7 +4,7 @@ import ExperienceDiv from "./ExperienceDiv";
 const experiences = [
   {
     id: "experience-1",
-    title: "Backend Developer Intern",
+    title: "Backend Lead (Intern)",
     company: "Mr. Loggage",
     location: "Vadodara, Gujarat, India",
     duration: "Jun 2024 – Aug 2024",
@@ -12,7 +12,7 @@ const experiences = [
       "Led backend development at a college-incubated logistics startup, building the Express.js backend from the ground up.",
     certificate: "/certificates/Experience/MrLoggageCertificate.pdf",
     detailedDescription: `
-# Backend Developer Intern - Mr. Loggage
+# Backend Lead (Intern) - Mr. Loggage
 
 ## Role Overview
 Mr. Loggage is a logistics startup incubated at my college, working out of a shared workspace on campus. I led backend development and built the Express.js backend from the ground up — from the first route to a working product.
@@ -45,21 +45,21 @@ Mr. Loggage is a logistics startup incubated at my college, working out of a sha
   },
   {
     id: "experience-2",
-    title: "Backend Developer Intern",
+    title: "Backend Intern",
     company: "Storyvord Ltd.",
     location: "London, UK (Remote)",
-    duration: "Jul 2024 – Jan 2025",
+    duration: "Jul 2024 – Dec 2024",
     shortDescription:
       "Django backend development for an AI film pre-production and production management SaaS platform.",
     certificate: "/certificates/Experience/StoryvordCertificate.pdf",
     detailedDescription: `
-# Backend Developer Intern - Storyvord Ltd.
+# Backend Intern - Storyvord Ltd.
 
 ## Company Overview
 Storyvord is a London-based SaaS company building an AI-powered film pre-production and production management platform — taking film teams from script to screen with AI-assisted planning, budgeting, and creative tooling.
 
 ## Role Details
-I joined Storyvord remotely as a Backend Developer Intern in July 2024, working on the Django backend that powers the platform. Within about six months I was promoted to Software Engineer based on ownership and output.
+I joined Storyvord remotely as a Backend Intern in July 2024, working on the Django backend that powers the platform. Within about six months I was promoted to Software Developer Intern based on ownership and output.
 
 ## Key Contributions
 - **Django Development**: Built and maintained backend services using Django and Django REST Framework
@@ -89,17 +89,56 @@ I joined Storyvord remotely as a Backend Developer Intern in July 2024, working 
   },
   {
     id: "experience-3",
-    title: "Software Engineer",
+    title: "Software Developer Intern",
     company: "Storyvord Ltd.",
     location: "London, UK (Remote)",
-    duration: "Jan 2025 – Present",
+    duration: "Jan 2025 – Apr 2026",
     shortDescription:
-      "Promoted from intern to Software Engineer; top backend contributor and sole author of the Creative Hub frontend on an AI film production platform. Now operating at lead scope — mentoring interns, authoring PRDs and system-design reviews.",
+      "Promoted from Backend Intern within 6 months; built core Creative Hub backend features — multi-provider image generation with cost-aware routing, credit wallet and pricing schema, Celery orchestration, and project-level RBAC.",
     detailedDescription: `
-# Software Engineer - Storyvord Ltd.
+# Software Developer Intern - Storyvord Ltd.
+
+## Role Overview
+Promoted from Backend Intern to Software Developer Intern within about six months, based on ownership and output. In this role I moved from maintaining backend services to building core product features for the Creative Hub — Storyvord's AI-assisted creative tooling for film teams.
+
+## Key Contributions
+- **Creative Hub Backend**: Built core Creative Hub backend features on Django and PostgreSQL
+- **Image Generation**: Implemented multi-provider AI image generation with cost-aware routing across providers
+- **Credit System**: Designed the credit wallet and the per-model, per-tier pricing schema behind it
+- **Async Orchestration**: Ran generation workloads through Celery queues so pipeline stages scale independently
+- **Access Control**: Implemented project-level role-based access control (RBAC) so film teams can safely collaborate
+
+## Technical Skills Gained
+- Owning product features end to end on a production Django/PostgreSQL codebase
+- Designing billing and pricing data models
+- Cost-aware routing across multiple AI image providers
+- Asynchronous task orchestration with Celery and Redis
+    `,
+    skills: [
+      "Django",
+      "Python",
+      "PostgreSQL",
+      "Celery",
+      "Redis",
+      "Django REST Framework",
+      "Docker",
+    ],
+    type: "Backend Development",
+    status: "Completed",
+  },
+  {
+    id: "experience-4",
+    title: "Founding Software Engineer",
+    company: "Storyvord Ltd.",
+    location: "London, UK (Remote)",
+    duration: "May 2026 – Present",
+    shortDescription:
+      "Founding-team engineer operating at lead scope on an AI film production platform — mentoring 4 interns, authoring PRDs and system-design reviews, sole author of the Creative Hub frontend, and builder of Script Intelligence, a nine-stage screenplay-analysis engine.",
+    detailedDescription: `
+# Founding Software Engineer - Storyvord Ltd.
 
 ## Role Evolution
-Storyvord builds an AI film pre-production and production management SaaS platform. I was promoted from Backend Developer Intern to Software Engineer within about six months, and now operate at lead scope: I mentor interns, own product decisions, and author PRDs and system-design reviews.
+Storyvord builds an AI film pre-production and production management SaaS platform. I grew from Backend Intern to Software Developer Intern to Founding Software Engineer, and now operate at lead scope: I mentor interns, own product decisions, and author PRDs and system-design reviews.
 
 ## Scope of Ownership
 - Own backend architecture and product decisions for the Creative Hub on Django/PostgreSQL
@@ -125,6 +164,14 @@ Storyvord builds an AI film pre-production and production management SaaS platfo
 - Manual/AI toggle with manual as the default (zero AI credits) — giving creative directors control where the industry default is fully AI-generated sheets
 - Chose deterministic compositing over generative rendering because image models re-imagine and distort real approved art
 
+## Script Intelligence — intelligence.storyvord.com
+- Built and deployed **Script Intelligence**: a nine-stage screenplay-analysis engine (FastAPI, Celery, Redis, Postgres, React on an AWS A10G GPU) that turns a Final Draft (.fdx) script into a scene-grounded ~13-section production and market report in 20–25 seconds
+- Runs at under **$0.01 marginal compute per script**, with zero external LLM API spend at inference
+- Trained its two in-house statistical models: an **XGBoost quantile-regression revenue predictor** (5th/50th/95th percentiles, conformal calibration, TreeSHAP attribution) over 42 engineered features on ~1,900 outcome-joined films, and a **k-means story-shape clusterer** over 2,232 normalized emotional arcs — with ~90% realized coverage of the stated revenue range on a time-held-out split
+- Validated character-network extraction against the **Moviegalaxies** academic gold standard: edge F1 0.96 across 710 shared films
+- Composed frozen open-source encoders (**BGE-M3**, **DistilRoBERTa** emotion, **GLiNER** NER) with deterministic, auditable graph/arithmetic layers — scene-ID provenance on every number, and confidence gates that refuse rather than fabricate
+- Sole author: ~13k lines of Python, 18 design documents, and self-hosted **MLflow** with content-hashed dataset lineage; a full retrain costs under $1.50 of GPU time
+
 ## Platform Engineering
 - **Billing**: Race-free credit billing using distributed locks and select_for_update, with a per-model, per-tier relational pricing schema behind credit wallets
 - **Access Control**: Project-level RBAC across the platform
@@ -133,9 +180,13 @@ Storyvord builds an AI film pre-production and production management SaaS platfo
     `,
     skills: [
       "Django",
+      "FastAPI",
       "Next.js",
       "React",
       "LangGraph",
+      "XGBoost",
+      "MLflow",
+      "AWS",
       "Azure",
       "Celery",
       "WebSockets",

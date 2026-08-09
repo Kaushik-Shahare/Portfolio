@@ -1,32 +1,44 @@
 const projects = [
   {
-    id: 1,
-    title: "Event Manager",
+    id: 5,
+    title: "Virtual Piano Player",
     shortDescription:
-      "Manage events of an organization, register, and get notifications.",
+      "Innovative piano learning tool using computer vision and AI.",
     detailedDescription:
-      "The Event Manager is a comprehensive web application designed to streamline the process of managing events within an organization. Users can easily view upcoming and past events, create new events, register for them, and receive timely notifications. The application offers an intuitive user interface and robust backend, ensuring a seamless event management experience.",
-    link: "https://evt-manager.onrender.com/",
-    gitHub: "https://github.com/Kaushik-Shahare/Event-Manager",
+      "The Virtual Piano Player project is an innovative tool designed to aid in piano learning. Users can draw a piano keyboard on a white surface, and the camera detects the keys using computer vision. The application plays the corresponding piano sounds as users interact with the keys. The project employs Python, OpenCV, and TensorFlow for hand and finger detection, although this feature is still under development.",
+    link: "https://github.com/Kaushik-Shahare/PianoPlayer",
+    gitHub: "https://github.com/Kaushik-Shahare/PianoPlayer",
     photos: [
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/signin.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/home.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/evtManagement.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/createEvent.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/userManagement.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/Lhome.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/LevtManagement.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/LcreateEvent.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/LuserManagement.png",
+      "https://github.com/Kaushik-Shahare/PianoPlayer/raw/main/demo/Images/keydetection.png",
     ],
     video: [
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Videos/Admin.mov",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Videos/Default.mov",
+      "https://github.com/Kaushik-Shahare/PianoPlayer/raw/main/demo/Videos/keydetection.mov",
     ],
-    techStack: ["Python", "Flask", "HTML", "CSS", "JavaScript", "SQLite"],
-    libraries: ["zxcvbn", "Jinja2", "bcrypt"],
+    techStack: ["Python", "OpenCV", "TensorFlow"],
+    libraries: ["NumPy", "Scikit-learn"],
     additionalInfo:
-      "This project was developed to streamline event management for large organizations.",
+      "This project aims to create an innovative piano learning tool using computer vision to detect keys and play sounds.",
+  },
+  {
+    id: 4,
+    title: "News Summary",
+    shortDescription:
+      "Capture or paste news articles to get summarized information.",
+    detailedDescription:
+      "The News Summary project is a powerful tool for extracting and summarizing news articles. Users can either capture a photo of a news article or paste the URL of an article to receive a summary that includes the title, date, author, and main content. The project leverages Python, Flask, and web scraping techniques to provide users with concise and relevant information from various news sources.",
+    link: "https://github.com/Kaushik-Shahare/News-Summarization-WebSite",
+    gitHub: "https://github.com/Kaushik-Shahare/News-Summarization-WebSite",
+    photos: [
+      "https://raw.githubusercontent.com/Kaushik-Shahare/News-Summarization-WebSite/main/demo/Images/home.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/News-Summarization-WebSite/main/demo/Images/Summary.png",
+    ],
+    video: [
+      "https://raw.githubusercontent.com/Kaushik-Shahare/News_Summarizar/master/demo_video/imageToSummary.mp4",
+    ],
+    techStack: ["Python", "Flask", "Computer Vision", "Machine Learning"],
+    libraries: ["CV2", "Pytesseract", "nltk", "facebook-bart-large-cnn"],
+    additionalInfo:
+      "This project extracts and summarizes news articles from various sources, providing users with concise information.",
   },
   {
     id: 2,
@@ -67,46 +79,62 @@ const projects = [
   //   additionalInfo:
   //     "A personal website to showcase my skills, projects, and experience. It includes a resume and contact form.",
   // },
+
   {
-    id: 4,
-    title: "News Summary",
+    id: 1,
+    title: "Event Manager",
     shortDescription:
-      "Capture or paste news articles to get summarized information.",
+      "Manage events of an organization, register, and get notifications.",
     detailedDescription:
-      "The News Summary project is a powerful tool for extracting and summarizing news articles. Users can either capture a photo of a news article or paste the URL of an article to receive a summary that includes the title, date, author, and main content. The project leverages Python, Flask, and web scraping techniques to provide users with concise and relevant information from various news sources.",
-    link: "https://github.com/Kaushik-Shahare/News-Summarization-WebSite",
-    gitHub: "https://github.com/Kaushik-Shahare/News-Summarization-WebSite",
+      "The Event Manager is a comprehensive web application designed to streamline the process of managing events within an organization. Users can easily view upcoming and past events, create new events, register for them, and receive timely notifications. The application offers an intuitive user interface and robust backend, ensuring a seamless event management experience.",
+    link: "https://evt-manager.onrender.com/",
+    gitHub: "https://github.com/Kaushik-Shahare/Event-Manager",
     photos: [
-      "https://raw.githubusercontent.com/Kaushik-Shahare/News-Summarization-WebSite/main/demo/Images/home.png",
-      "https://raw.githubusercontent.com/Kaushik-Shahare/News-Summarization-WebSite/main/demo/Images/Summary.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/signin.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/home.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/evtManagement.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/createEvent.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/userManagement.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/Lhome.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/LevtManagement.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/LcreateEvent.png",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Images/LuserManagement.png",
     ],
     video: [
-      "https://raw.githubusercontent.com/Kaushik-Shahare/News_Summarizar/master/demo_video/imageToSummary.mp4",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Videos/Admin.mov",
+      "https://raw.githubusercontent.com/Kaushik-Shahare/Event-Manager/main/demo/Videos/Default.mov",
     ],
-    techStack: ["Python", "Flask", "Computer Vision", "Machine Learning"],
-    libraries: ["CV2", "Pytesseract", "nltk", "facebook-bart-large-cnn"],
+    techStack: ["Python", "Flask", "HTML", "CSS", "JavaScript", "SQLite"],
+    libraries: ["zxcvbn", "Jinja2", "bcrypt"],
     additionalInfo:
-      "This project extracts and summarizes news articles from various sources, providing users with concise information.",
+      "This project was developed to streamline event management for large organizations.",
   },
   {
-    id: 5,
-    title: "Virtual Piano Player",
+    id: 10,
+    title: "LeadHubAuto",
     shortDescription:
-      "Innovative piano learning tool using computer vision and AI.",
+      "AI-powered lead automation system with event-driven architecture and multi-agent workflows.",
     detailedDescription:
-      "The Virtual Piano Player project is an innovative tool designed to aid in piano learning. Users can draw a piano keyboard on a white surface, and the camera detects the keys using computer vision. The application plays the corresponding piano sounds as users interact with the keys. The project employs Python, OpenCV, and TensorFlow for hand and finger detection, although this feature is still under development.",
-    link: "https://github.com/Kaushik-Shahare/PianoPlayer",
-    gitHub: "https://github.com/Kaushik-Shahare/PianoPlayer",
+      "LeadHubAuto is a production-grade lead automation platform that handles email, WhatsApp communication, follow-ups, and meeting scheduling using an event-driven architecture. Built with FastAPI, LangGraph, Celery, and Kafka-style async processing, the system eliminates manual CRM workflows by orchestrating AI agents that classify, engage, and convert leads automatically.",
+    link: "https://leadhubauto.in",
+    gitHub: "https://github.com/Kaushik-Shahare/LeadAutomationSystem",
     photos: [
-      "https://github.com/Kaushik-Shahare/PianoPlayer/raw/main/demo/Images/keydetection.png",
+      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/LeadHubAuto-AgentArchitecture.png`,
+      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/Dashboard.png`,
+      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/KnowledgeBase.png`,
+      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/Connection-Gateway.png`,
     ],
-    video: [
-      "https://github.com/Kaushik-Shahare/PianoPlayer/raw/main/demo/Videos/keydetection.mov",
+    techStack: [
+      "Python",
+      "FastAPI",
+      "LangGraph",
+      "Celery",
+      "Redis",
+      "PostgreSQL",
     ],
-    techStack: ["Python", "OpenCV", "TensorFlow"],
-    libraries: ["NumPy", "Scikit-learn"],
+    libraries: ["LangGraph", "Celery", "Redis", "Pandas", "pgvector"],
     additionalInfo:
-      "This project aims to create an innovative piano learning tool using computer vision to detect keys and play sounds.",
+      "Designed for real-world automation use cases including WhatsApp/email engagement, AI-based lead classification, and meeting scheduling with full observability using Grafana, Loki, and Promtail.",
   },
   {
     id: 6,
@@ -279,33 +307,6 @@ This project was developed to recreate the popular mobile game MiniMilitia on th
       "FFmpeg performance varied significantly across profiles, requiring profile-specific scaling and concurrency tuning.",
       "Full deployment was not feasible due to high cloud resource requirements (Kafka brokers, Celery workers, FFmpeg compute nodes, monitoring stack).",
     ],
-  },
-  {
-    id: 10,
-    title: "LeadHubAuto",
-    shortDescription:
-      "AI-powered lead automation system with event-driven architecture and multi-agent workflows.",
-    detailedDescription:
-      "LeadHubAuto is a production-grade lead automation platform that handles email, WhatsApp communication, follow-ups, and meeting scheduling using an event-driven architecture. Built with FastAPI, LangGraph, Celery, and Kafka-style async processing, the system eliminates manual CRM workflows by orchestrating AI agents that classify, engage, and convert leads automatically.",
-    link: "https://leadhubauto.in",
-    gitHub: "https://github.com/Kaushik-Shahare/LeadAutomationSystem",
-    photos: [
-      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/LeadHubAuto-AgentArchitecture.png`,
-      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/Dashboard.png`,
-      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/KnowledgeBase.png`,
-      `https://raw.githubusercontent.com/Kaushik-Shahare/portfolio/main/src/Components/Projects/Images%26Videos/LeadHubAuto/Connection-Gateway.png`,
-    ],
-    techStack: [
-      "Python",
-      "FastAPI",
-      "LangGraph",
-      "Celery",
-      "Redis",
-      "PostgreSQL",
-    ],
-    libraries: ["LangGraph", "Celery", "Redis", "Pandas", "pgvector"],
-    additionalInfo:
-      "Designed for real-world automation use cases including WhatsApp/email engagement, AI-based lead classification, and meeting scheduling with full observability using Grafana, Loki, and Promtail.",
   },
   {
     id: 11,
