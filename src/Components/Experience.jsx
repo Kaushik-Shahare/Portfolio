@@ -133,7 +133,7 @@ Promoted from Backend Intern to Software Developer Intern within about six month
     location: "London, UK (Remote)",
     duration: "May 2026 – Present",
     shortDescription:
-      "Founding-team engineer operating at lead scope on an AI film production platform — mentoring 4 interns, authoring PRDs and system-design reviews, sole author of the Creative Hub frontend, and builder of Script Intelligence, a nine-stage screenplay-analysis engine.",
+      "Founding-team engineer operating at lead scope on an AI film production platform — mentoring 4 interns, authoring PRDs and system-design reviews, sole author of the Creative Hub frontend, and builder of an end-to-end ML screenplay-analysis engine.",
     detailedDescription: `
 # Founding Software Engineer - Storyvord Ltd.
 
@@ -164,13 +164,11 @@ Storyvord builds an AI film pre-production and production management SaaS platfo
 - Manual/AI toggle with manual as the default (zero AI credits) — giving creative directors control where the industry default is fully AI-generated sheets
 - Chose deterministic compositing over generative rendering because image models re-imagine and distort real approved art
 
-## Script Intelligence — intelligence.storyvord.com
-- Built and deployed **Script Intelligence**: a nine-stage screenplay-analysis engine (FastAPI, Celery, Redis, Postgres, React on an AWS A10G GPU) that turns a Final Draft (.fdx) script into a scene-grounded ~13-section production and market report in 20–25 seconds
-- Runs at under **$0.01 marginal compute per script**, with zero external LLM API spend at inference
-- Trained its two in-house statistical models: an **XGBoost quantile-regression revenue predictor** (5th/50th/95th percentiles, conformal calibration, TreeSHAP attribution) over 42 engineered features on ~1,900 outcome-joined films, and a **k-means story-shape clusterer** over 2,232 normalized emotional arcs — with ~90% realized coverage of the stated revenue range on a time-held-out split
-- Validated character-network extraction against the **Moviegalaxies** academic gold standard: edge F1 0.96 across 710 shared films
-- Composed frozen open-source encoders (**BGE-M3**, **DistilRoBERTa** emotion, **GLiNER** NER) with deterministic, auditable graph/arithmetic layers — scene-ID provenance on every number, and confidence gates that refuse rather than fabricate
-- Sole author: ~13k lines of Python, 18 design documents, and self-hosted **MLflow** with content-hashed dataset lineage; a full retrain costs under $1.50 of GPU time
+## ML Screenplay Analysis
+- Built and deployed an end-to-end **ML screenplay-analysis engine** (FastAPI, Celery, Postgres, React on GPU infrastructure) that turns a screenplay into a scene-grounded production and market report in under half a minute
+- Combined in-house trained statistical models with open-source encoders and deterministic, auditable layers — every output traceable to a scene, with confidence gates that refuse rather than fabricate
+- Validated core extraction quality against an academic gold-standard dataset
+- Sole author: ~13k lines of Python, a full design-document corpus, and self-hosted **MLflow** experiment tracking with dataset lineage
 
 ## Platform Engineering
 - **Billing**: Race-free credit billing using distributed locks and select_for_update, with a per-model, per-tier relational pricing schema behind credit wallets
