@@ -55,7 +55,7 @@ const AboutMe = () => {
 
           <div className="mt-6 flex flex-col lg:flex-row lg:justify-start space-y-4 lg:space-y-0 lg:space-x-4">
             <a
-              href="https://linkedin.com/in/kaushik-shahare-84bba7267"
+              href="https://www.linkedin.com/in/kaushik-shahare"
               className="px-4 py-2 bg-green-400 bg-opacity-20 border border-green-400 text-green-400 rounded hover:bg-opacity-30 transition-all duration-300 text-center text-sm"
             >
               LinkedIn

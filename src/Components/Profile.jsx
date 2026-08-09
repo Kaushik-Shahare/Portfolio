@@ -76,7 +76,7 @@ const Profile = () => {
       {/* Social Media Vertical Bar */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-5 z-30">
         <a
-          href="https://linkedin.com/in/kaushik-shahare-84bba7267"
+          href="https://www.linkedin.com/in/kaushik-shahare"
           className="text-green-400 hover:text-green-500 transition-colors duration-300 hover:glow-green"
           target="_blank"
           rel="noopener noreferrer"
